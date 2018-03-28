@@ -24,7 +24,7 @@ public class AdminController {
         return "index";
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
     public Object login(@RequestParam("username") String username,
                         @RequestParam("password") String password,
