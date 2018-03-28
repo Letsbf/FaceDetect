@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(214, 212, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#support {
+    margin: 10px;
+}
+.camera-container {
+    height: 400px;
+    width: 800px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.img-container {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.take-button {
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+}
+.take-button:focus {
+    outline: none;
+    border: 1px solid black;
+}
