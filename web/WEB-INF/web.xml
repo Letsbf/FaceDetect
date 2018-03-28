@@ -9,12 +9,12 @@
     </welcome-file-list>
 
 
-    <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>*.html</url-pattern>
-        <url-pattern>*.css</url-pattern>
-        <url-pattern>*.js</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>default</servlet-name>-->
+        <!--<url-pattern>*.html</url-pattern>-->
+        <!--<url-pattern>*.css</url-pattern>-->
+        <!--<url-pattern>*.js</url-pattern>-->
+    <!--</servlet-mapping>-->
 
     <servlet>
         <servlet-name>springmvc</servlet-name>
