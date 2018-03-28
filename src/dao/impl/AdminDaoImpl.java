@@ -11,7 +11,7 @@ public class AdminDaoImpl implements AdminDao{
     @Override
     public Admin selectAdmin(String username) {
         SqlSession sqlSession = SqlSessionHelper.openSqlSession();
-        Admin admin = sqlSession.selectOne("mapper.adminMapper.selectAdmin");
+        Admin admin = sqlSession.selectOne("mapper.adminMapper.selectAdmin", username);
         return admin;
     }
 }

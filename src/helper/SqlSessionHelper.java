@@ -13,7 +13,7 @@ public class SqlSessionHelper {
 
     public static SqlSessionFactory openSqlSessionFactory() {
         if (sqlSessionFactory == null) {
-            InputStream inputStream = null;
+            InputStream inputStream;
             try {
                 inputStream = Resources.getResourceAsStream(resource);
                 return new SqlSessionFactoryBuilder().build(inputStream);
