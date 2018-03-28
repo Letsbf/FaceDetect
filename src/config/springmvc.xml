@@ -16,5 +16,32 @@
     <context:annotation-config />
 
     <context:component-scan base-package="controller"/>
+    <context:component-scan base-package="dao.impl"/>
+
+
+    <!--静态文件-->
+    <!--<mvc:resources mapping="/html/**" location="/html"/>-->
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/html/"/>
+        <property name="suffix" value=".html"/>
+    </bean>
+
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/html;charset=UTF-8</value>
+                        <value>application/json;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!--<mvc:default-servlet-handler/>-->
+
+
 
 </beans>
