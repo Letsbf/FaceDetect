@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei", SimHei, "WenQuanYi Micro Hei";
+}
+body {
+    background: rgb(214, 212, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: top;
+}
+.login-container {
+    height: 400px;
+    width: 700px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside-container {
+    height: 100%;
+    width: 200px;
+    overflow: hidden;
+}
+.aside-container > img {
+    height: 100%;
+    width: auto;
+}
+.form-container {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+form {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-class {
+    height: 30px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.input-class:focus {
+    outline: none;
+    border: 1px solid black;
+}
+.submit-class {
+    height: 30px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    transition: background .5s ease-in-out;
+}
+.submit-class:hover {
+    background: black;
+    color: white;
+}
